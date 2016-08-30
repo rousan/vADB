@@ -1,2 +1,3 @@
 # vADB
-virtual adb for android app developing to debug app on real device
+This is a virtual adb used during developing Android app. It helps the developer to debug the app one real device through WIFI
+directly. To use, just download the android app and the java app, then install and run. :D
