@@ -1,0 +1,615 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:background="@drawable/theme_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:clickable="true"
+            android:background="#000"
+            android:alpha="0.0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:background="@drawable/round_panel_bg"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="22dp"
+                    android:paddingBottom="22dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:paddingRight="15dp"
+                                android:gravity="right"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_marginRight="10dp"
+                                    android:text="Adb Status"
+                                    android:background="#00000000"
+                                    android:textSize="@dimen/SMALLER_FONT_SIZE"
+                                    android:textColor="@color/HEADINGS_COLOR"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:text=":"
+                                    android:background="#00000000"
+                                    android:textSize="@dimen/SMALL_FONT_SIZE"
+                                    android:textColor="@color/HEADINGS_COLOR"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_gravity="right"
+                                android:id="@+id/adb_status_holder_tv"
+                                android:text="Disabled"
+                                android:textSize="@dimen/SMALLER_FONT_SIZE"
+                                android:textColor="@color/PARAGRAPH_COLOR"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:paddingRight="15dp"
+                                android:gravity="right"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_marginRight="10dp"
+                                    android:text="Adb Port"
+                                    android:background="#00000000"
+                                    android:textSize="@dimen/SMALLER_FONT_SIZE"
+                                    android:textColor="@color/HEADINGS_COLOR"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:text=":"
+                                    android:background="#00000000"
+                                    android:textSize="@dimen/SMALL_FONT_SIZE"
+                                    android:textColor="@color/HEADINGS_COLOR"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_gravity="right"
+                                android:id="@+id/port_holder_tv"
+                                android:text="1237"
+                                android:textSize="@dimen/SMALLER_FONT_SIZE"
+                                android:textColor="@color/PARAGRAPH_COLOR"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_gravity="top"
+                                android:paddingRight="15dp"
+                                android:gravity="right"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_marginRight="10dp"
+                                    android:text="Device IPs"
+                                    android:background="#00000000"
+                                    android:textSize="@dimen/SMALLER_FONT_SIZE"
+                                    android:textColor="@color/HEADINGS_COLOR"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:text=":"
+                                    android:background="#00000000"
+                                    android:textSize="@dimen/SMALL_FONT_SIZE"
+                                    android:textColor="@color/HEADINGS_COLOR"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/ip_holder_tv"
+                                android:gravity="left"
+                                android:text="192.168.1.112\n172.0.0.1\n192.168.43.1"
+                                android:textSize="@dimen/SMALLER_FONT_SIZE"
+                                android:textColor="@color/PARAGRAPH_COLOR"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/enable_disable_adb_btn"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/btn_bg_state2"
+                    android:gravity="center"
+                    android:text="Enable"
+                    android:textSize="@dimen/SMALL_FONT_SIZE"
+                    android:textColor="@color/PARAGRAPH_COLOR"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:id="@+id/restart_adb_btn"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/btn_bg_state"
+                    android:gravity="center"
+                    android:text="Restart"
+                    android:textSize="@dimen/SMALL_FONT_SIZE"
+                    android:textColor="#ffa85687"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/actionbar"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:background="#00000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/app_icon"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp" />
+
+                <TextView
+                    android:id="@+id/app_title"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:text="vADB"
+                    android:textSize="@dimen/HEADING_FONT_SIZE"
+                    android:textColor="@color/PARAGRAPH_COLOR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/icon_bg_state"
+                    android:id="@+id/refresh_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/sync"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/icon_bg_state"
+                    android:id="@+id/option_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/option"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:visibility="gone"
+            android:id="@+id/popup_mask"
+            android:clickable="true"
+            android:background="#55000000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginBottom="-6dp"
+            android:padding="0dp"
+            android:id="@+id/triangle"
+            android:layout_marginRight="16dp"
+            android:layout_below="@id/actionbar"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#753c5b"
+                android:textSize="15dp"
+                android:text="&#9650;"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/popup_menu_panel"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/popup_menu_bg"
+            android:layout_below="@id/triangle"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/how_to_use_menuitem"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/popup_item_state"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="40dp"
+                    android:paddingLeft="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/ic_help_white_24px"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp" />
+
+                    <TextView
+                        android:text="How To Use"
+                        android:textSize="@dimen/SMALLER_FONT_SIZE"
+                        android:textColor="@color/PARAGRAPH_COLOR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <View
+                    android:background="@drawable/separator_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"/>
+
+                <LinearLayout
+                    android:id="@+id/settings_menuitem"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/popup_item_state"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/ic_settings_black_24px"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp" />
+
+                    <TextView
+                        android:text="Settings"
+                        android:textSize="@dimen/SMALLER_FONT_SIZE"
+                        android:textColor="@color/PARAGRAPH_COLOR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <View
+                    android:background="@drawable/separator_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"/>
+
+                <LinearLayout
+                    android:id="@+id/about_me_menuitem"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/popup_item_state"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/ic_info_outline_white_24px"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp" />
+
+                    <TextView
+                        android:text="Contact Me"
+                        android:textSize="@dimen/SMALLER_FONT_SIZE"
+                        android:textColor="@color/PARAGRAPH_COLOR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <View
+                    android:background="@drawable/separator_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"/>
+
+                <LinearLayout
+                    android:id="@+id/about_app_menuitem"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/popup_item_state"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/ic_apps_white_24px"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp" />
+
+                    <TextView
+                        android:text="About App"
+                        android:textSize="@dimen/SMALLER_FONT_SIZE"
+                        android:textColor="@color/PARAGRAPH_COLOR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <View
+                    android:background="@drawable/separator_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"/>
+
+                <LinearLayout
+                    android:id="@+id/update_menuitem"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/popup_item_state"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/ic_system_update_white_48px"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp" />
+
+                    <TextView
+                        android:text="Update"
+                        android:textSize="@dimen/SMALLER_FONT_SIZE"
+                        android:textColor="@color/PARAGRAPH_COLOR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <View
+                    android:background="@drawable/separator_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"/>
+
+                <LinearLayout
+                    android:id="@+id/help_menuitem"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/popup_item_state"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/ic_help_white_24px"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp" />
+
+                    <TextView
+                        android:text="Help"
+                        android:textSize="@dimen/SMALLER_FONT_SIZE"
+                        android:textColor="@color/PARAGRAPH_COLOR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:background="@drawable/bottom_panel_bg"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bottom_tv"
+                android:text="vADB  v2.0.0"
+                android:gravity="center"
+                android:textColor="@color/PARAGRAPH_COLOR"
+                android:textSize="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

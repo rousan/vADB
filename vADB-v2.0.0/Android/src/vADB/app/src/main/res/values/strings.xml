@@ -1,0 +1,95 @@
+<resources>
+    <!-- App Related Data-->
+    <string name="app_name">vADB</string>
+    <string name="app_version_code">20162</string>
+    <string name="app_version_name">2.0.0</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_about_me">AboutMeActivity</string>
+    <string name="title_activity_about_app">AboutAppActivity</string>
+    <string name="app_desc1">Virtual ADB (vADB) is an utility application. It serves all services of an ADB with easy process. It helps you to run or debug any android apps on any real device from your pc over WIFI connection or Hotspot. It also help you to view all app logs easily. For this purpose you have to download the corresponding pc helper app : a Java application. The download link is available in How To Use page.</string>
+    <string name="app_desc2">To know how to use this app properly please read the How to Use page of this app.</string>
+    <string name="how_to_use_description_1">Virtual ADB (vADB) is an utility application. It serves all services of an ADB like App run, debug, get logs etc with easy process. For this purpose first of all you have to download a desktop application - a Java Application(download link is given below) and install it in your pc. This desktop app is cross platform, runs on Windows, Linux, Mac i.e on any Java Environment. After installing this java app, run it and then you will see a window and you will notice many tabs like \'Device\', \'Run\', \'Logs\' etc. Then first of all you have to choose Device tab and give the wifi-network ip in which network your pc and the target device is running now and the port of the target android device on which you want to run your app, You can find ip and the port of the target device by opening the vADB android application(That you installed in your phone). BTW, then click \'Save\' button, and then choose \'Run\' tab and give the target android apk file path which you want to run, and click \'Run\' button. After transferring the data to the target device you will notice a screen in your android device for installing app, so generally you will choose the \'Install\' btn and after installing, click on \'Open\' btn - Voila! Your app will started to launch.</string>
+    <string name="how_to_use_description_2">Now your problem is you want to get the logs. Don\'t worry, we have created a java library for this called vADB-Logs-lib-v2.0.0.jar, you will get this from your downloaded zip file(you downloaded the zip file for the desktop app). So just include this library into your project, and use the utility classes defined in that library for logs. For more info read the readme.txt file(included in that zip file that you downloaded).</string>
+    <string name="how_to_use_description_3">For more info please contact with me at</string>
+    <string name="why_use_app">Generally the pre-built ADB(comes from the native sdk) generates many problems during running or debugging the app in android device. This vADB app eliminates this problem and provides many efficient features. This app works smoothly over wifi.</string>
+
+
+    <!-- Theme Related Data-->
+    <color name="THEME_COLOR1">#784299</color>
+    <color name="THEME_COLOR2">#8d25b4</color>
+    <color name="THEME_COLOR3">#853fcb</color>
+    <color name="HEADINGS_COLOR">#ff91b4</color>
+    <color name="PARAGRAPH_COLOR">#e5dcff</color>
+    <color name="OTHER_COLOR">#ff81c6e7</color>
+    <color name="POPUP_ICON_COLOR">#cec6e5</color>
+    <string name="STATUS_BAR_COLOR">#ffa85687</string>
+
+
+
+    <!-- About Me Related Data-->
+    <string name="ME_NAME">Ariyan Khan</string>
+    <string name="ME_PURPOSE">Full Stack Developer</string>
+    <string name="ME_EMAIL">ariyankhan46@gmail.com</string>
+    <string name="ME_WEBSITE">www.byter.in</string>
+    <string name="ME_PROFILE_LINK">www.facebook.com/fakeyounger</string>
+    <string name="ME_MOBILE">+91 8116840517</string>
+    <string name="ME_TWITTER">www.byter.in</string>
+    <string name="ME_GOOGLE_PLUS">plus.google.com/+AriyanKhanfakeyounger</string>
+    <string name="ME_GITHUB">github.com/ariyankhan</string>
+    <string name="ME_FB">www.facebook.com/fakeyounger</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_update_center">UpdateCenterActivity</string>
+    <string name="title_activity_help_center">HelpCenterActivity</string>
+
+
+
+
+
+
+    <!-- Others Related Data-->
+    <string name="HELP_TEXT">If you face any problem to this app or if you find any bugs then please inform me, I will try to fix it. And If you have any suggestions to add any others helpful features then immediately poke me. Thanks a lot.</string>
+    <string name="title_activity_how_to_use">HowToUse</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

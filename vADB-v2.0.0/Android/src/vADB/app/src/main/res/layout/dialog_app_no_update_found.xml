@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/dialog_title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:text="No Update"
+            android:textSize="@dimen/SMALL_FONT_SIZE"
+            android:textColor="@color/PARAGRAPH_COLOR"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:text="No updates found, You are up to dated"
+            android:textColor="@color/PARAGRAPH_COLOR"
+            android:textSize="@dimen/SMALL_FONT_SIZE"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@drawable/separator_bg"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingBottom="13dp"
+                android:paddingTop="13dp"
+                android:id="@+id/cancel_btn"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/dialog_btn_state"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textSize="@dimen/SMALL_FONT_SIZE"
+                android:textColor="@color/PARAGRAPH_COLOR"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@drawable/separator_bg"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/ok_btn"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/dialog_btn_state"
+                android:gravity="center"
+                android:text="OK"
+                android:textSize="@dimen/SMALL_FONT_SIZE"
+                android:textColor="@color/PARAGRAPH_COLOR"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

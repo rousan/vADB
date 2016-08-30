@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/dialog_title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:text="Adb Port Change"
+            android:textSize="@dimen/SMALL_FONT_SIZE"
+            android:textColor="@color/PARAGRAPH_COLOR"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:maxLength="5"
+            android:scrollHorizontally="true"
+            android:gravity="center_vertical"
+            android:id="@+id/dialog_port_input"
+            android:layout_marginRight="5dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textCursorDrawable="@null"
+            android:lines="1"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/PARAGRAPH_COLOR"
+            android:background="#00000000"
+            android:textSize="@dimen/SMALLER_FONT_SIZE"
+            android:hint="ADB Port"
+            android:textColorHint="#ffbfbfd4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@drawable/separator_bg"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingBottom="13dp"
+                android:paddingTop="13dp"
+                android:id="@+id/cancel_btn"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/dialog_btn_state"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textSize="@dimen/SMALL_FONT_SIZE"
+                android:textColor="@color/PARAGRAPH_COLOR"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@drawable/separator_bg"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/change_btn"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/dialog_btn_state"
+                android:gravity="center"
+                android:text="Change"
+                android:textSize="@dimen/SMALL_FONT_SIZE"
+                android:textColor="@color/PARAGRAPH_COLOR"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@drawable/dialog_title_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:text="New Update Found"
+                android:textSize="@dimen/SMALL_FONT_SIZE"
+                android:textColor="@color/PARAGRAPH_COLOR"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@drawable/round_theme"
+                android:layout_marginBottom="3dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/app_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/version_name_holder"
+                android:gravity="center"
+                android:text="Version  :  2.0.1"
+                android:textSize="@dimen/SMALLER_FONT_SIZE"
+                android:textColor="@color/PARAGRAPH_COLOR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/app_size_holder"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="Size  :  3.4MB"
+                android:textSize="@dimen/SMALLER_FONT_SIZE"
+                android:textColor="@color/PARAGRAPH_COLOR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/app_description_holder"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="This version has some extra features like command run etc, and it has been fixed some bugs.\nSo update now."
+                android:textSize="@dimen/SMALLER_FONT_SIZE"
+                android:textColor="@color/PARAGRAPH_COLOR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@drawable/separator_bg"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingBottom="13dp"
+                android:paddingTop="13dp"
+                android:id="@+id/cancel_btn"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/dialog_btn_state"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textSize="@dimen/SMALL_FONT_SIZE"
+                android:textColor="@color/PARAGRAPH_COLOR"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@drawable/separator_bg"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/update_btn"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/dialog_btn_state"
+                android:gravity="center"
+                android:text="Update"
+                android:textSize="@dimen/SMALL_FONT_SIZE"
+                android:textColor="@color/PARAGRAPH_COLOR"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
