@@ -24,15 +24,11 @@ Voila! your target app runs on real device over Wi-Fi.
 There is a built-in tool named `adb`(a command line application, part of android `SDK`) that helps to debug app,
 execute `shell` command directly from PC to phone etc. But sometimes it makes problems for some devices. So use this `vADB` app, only when built-in `abd` does not work.
 
-## Contributors
-
-* [Ariyan Khan](https://github.com/ariyankhan)
-
 ## License
 
 MIT License
 
-Copyright (c) 2017 Ariyan Khan
+Copyright (c) 2017 Rousan Ali
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
